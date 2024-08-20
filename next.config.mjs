@@ -4,7 +4,7 @@ const nextConfig = {
     const rootPath = '/bts';
     const subPath = '/bts/:path*';
     const reverseProxyUrl =
-      'bugfix-pub-0-500-errors.feat.bts.joyn.de';
+      'https://bugfix-pub-0-500-errors.feat.bts.joyn.de';
 
     const reverseProxyRootUrl = `${reverseProxyUrl}${rootPath}`;
     const reverseProxySubUrl = `${reverseProxyUrl}${subPath}`;
