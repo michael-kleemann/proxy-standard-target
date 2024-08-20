@@ -53,27 +53,27 @@ const nextConfig = {
       ],
     };
   },
-  async headers() {
-    return [
-      {
-        source: '/bts/:path*',  // Match the path you're proxying
-        headers: [
-          {
-            key: 'Host',
-            value: 'bts-proxy-git-main-michael-kleemanns-projects.vercel.app',  // Replace with your target host
-          },
-          {
-            key: 'X-Forwarded-Host',
-            value: 'feature-pub-5121-clientside-routing.feat.bts.joyn.de',  // Replace with your target host
-          },
-          {
-            key: 'X-Forwarded-Proto',
-            value: 'https',  // Assuming you're forwarding HTTPS requests
-          },
-        ],
-      },
-    ];
-  },
+  // async headers() {
+  //   return [
+  //     {
+  //       source: '/bts/:path*',  // Match the path you're proxying
+  //       headers: [
+  //         {
+  //           key: 'Host',
+  //           value: 'bts-proxy-git-main-michael-kleemanns-projects.vercel.app',  // Replace with your target host
+  //         },
+  //         {
+  //           key: 'X-Forwarded-Host',
+  //           value: 'feature-pub-5121-clientside-routing.feat.bts.joyn.de',  // Replace with your target host
+  //         },
+  //         {
+  //           key: 'X-Forwarded-Proto',
+  //           value: 'https',  // Assuming you're forwarding HTTPS requests
+  //         },
+  //       ],
+  //     },
+  //   ];
+  // },
 };
 
 export default nextConfig;
