@@ -53,31 +53,6 @@ const nextConfig = {
       ],
     };
   },
-  async headers() {
-    return [
-      {
-        source: '/bts/:path*',  // Match the path you're proxying
-        headers: [
-          {
-            key: 'Host',
-            value: 'feature-pub-5121-clientside-routing.feat.bts.joyn.de',  // Replace with your target host
-          },
-          {
-            key: 'X-Forwarded-Host',
-            value: 'feature-pub-5121-clientside-routing.feat.bts.joyn.de',  // Replace with your target host
-          },
-          {
-            key: 'X-Forwarded-Proto',
-            value: 'https',  // Assuming you're forwarding HTTPS requests
-          },
-          {
-            key: 'X-Forwarded-For',
-            value: '0.0.0.0',  // Replace with the appropriate client IP handling
-          },
-        ],
-      },
-    ];
-  },
 };
 
 export default nextConfig;
