@@ -8,7 +8,7 @@ export function middleware(req: NextRequest) {
     const originalClientIp = clientIp?.split(',')[0].trim();
 
     // Add the original client IP to a custom header
-    req.headers.set('X-Original-Client-IP', originalClientIp||"" );
+    // req.headers.set('X-Original-Client-IP', originalClientIp||"" );
 
     return NextResponse.next();
 }
