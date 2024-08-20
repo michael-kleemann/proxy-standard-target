@@ -60,7 +60,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Host',
-            value: 'bts-proxy-git-main-michael-kleemanns-projects.vercel.app',  // Replace with your target host
+            value: 'feature-pub-5121-clientside-routing.feat.bts.joyn.de',  // Replace with your target host
           },
           {
             key: 'X-Forwarded-Host',
@@ -69,6 +69,10 @@ const nextConfig = {
           {
             key: 'X-Forwarded-Proto',
             value: 'https',  // Assuming you're forwarding HTTPS requests
+          },
+          {
+            key: 'X-Forwarded-For',
+            value: '0.0.0.0',  // Replace with the appropriate client IP handling
           },
         ],
       },
