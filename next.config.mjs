@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/default"
+    basePath: "/proxy-standard-target"
 };
 
 export default nextConfig;
